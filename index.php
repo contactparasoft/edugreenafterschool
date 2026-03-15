@@ -7,22 +7,27 @@ get_header();
 ?>
 
 <main class="site-main">
-    <div class="container">
-        <section class="section-box">
+    <section class="section-shell">
+        <div class="container">
             <?php if ( have_posts() ) : ?>
                 <?php while ( have_posts() ) : the_post(); ?>
-                    <article <?php post_class(); ?>>
-                        <h1><?php the_title(); ?></h1>
-                        <div class="entry-content">
+                    <article <?php post_class( 'page-content-box' ); ?> data-reveal>
+                        <header class="page-header">
+                            <h1><?php the_title(); ?></h1>
+                        </header>
+
+                        <div class="editor-content">
                             <?php the_content(); ?>
                         </div>
                     </article>
                 <?php endwhile; ?>
             <?php else : ?>
-                <h1>Nu există conținut disponibil.</h1>
+                <article class="page-content-box" data-reveal>
+                    <h1>Nu există conținut disponibil.</h1>
+                </article>
             <?php endif; ?>
-        </section>
-    </div>
+        </div>
+    </section>
 </main>
 
 <?php get_footer(); ?>

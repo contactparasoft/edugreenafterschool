@@ -6,24 +6,49 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
+$contact = edugreen_contact_data();
+
 get_header();
 ?>
 
 <main class="site-main">
-    <div class="container">
-        <section class="page-hero">
-            <h1>Înscriere / solicitare preliminară</h1>
-            <p>Template pentru formular de înscriere și informații pentru părinți.</p>
-        </section>
+    <section class="section-shell">
+        <div class="container page-content-box" data-reveal>
+            <p class="eyebrow">Înscriere</p>
+            <h1>Solicitare preliminară</h1>
+            <p>
+                Înscrierile se realizează în limita locurilor disponibile, în ordinea solicitărilor.
+                Pentru confirmarea locului, părinții pot contacta echipa telefonic sau prin email.
+            </p>
 
-        <section class="section-box">
-            <?php while ( have_posts() ) : the_post(); ?>
-                <div class="entry-content">
-                    <?php the_content(); ?>
-                </div>
-            <?php endwhile; ?>
-        </section>
-    </div>
+            <div class="contact-list">
+                <p><a href="tel:+<?php echo esc_attr( $contact['anca_phone_href'] ); ?>">Anca Rodean: <?php echo esc_html( $contact['anca_phone_display'] ); ?></a></p>
+                <p><a href="tel:+<?php echo esc_attr( $contact['alexandra_phone_href'] ); ?>">Alexandra Niță: <?php echo esc_html( $contact['alexandra_phone_display'] ); ?></a></p>
+                <p><a href="mailto:<?php echo antispambot( esc_attr( $contact['public_email'] ) ); ?>"><?php echo antispambot( esc_html( $contact['public_email'] ) ); ?></a></p>
+                <p><a href="<?php echo esc_url( $contact['facebook_url'] ); ?>" target="_blank" rel="noopener noreferrer">Mesaj pe pagina de Facebook</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-shell section-shell-soft">
+        <div class="container page-content-box" data-reveal>
+            <h2>Formular</h2>
+            <p>
+                Dacă în această pagină este adăugat un formular din WordPress,
+                acesta va fi afișat mai jos și poate fi folosit pentru solicitări rapide.
+            </p>
+
+            <?php if ( have_posts() ) : ?>
+                <?php while ( have_posts() ) : the_post(); ?>
+                    <?php if ( trim( wp_strip_all_tags( get_the_content() ) ) ) : ?>
+                        <div class="editor-content">
+                            <?php the_content(); ?>
+                        </div>
+                    <?php endif; ?>
+                <?php endwhile; ?>
+            <?php endif; ?>
+        </div>
+    </section>
 </main>
 
 <?php get_footer(); ?>

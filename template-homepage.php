@@ -10,33 +10,21 @@ get_header();
 ?>
 
 <main class="site-main">
-    <div class="container">
-        <section class="hero">
-            <h1>EduGreen Afterschool</h1>
-            <p>
-                Template pentru pagina principală. Aceasta va fi homepage doar dacă tu alegi
-                această pagină în Settings → Reading.
-            </p>
-        </section>
+    <?php get_template_part( 'template-parts/content', 'homepage' ); ?>
 
-        <section class="section-box">
-            <h2>Ce poți pune aici</h2>
-            <ul>
-                <li>prezentarea serviciilor</li>
-                <li>avantajele programului</li>
-                <li>secțiuni pentru părinți și copii</li>
-                <li>call to action pentru înscriere</li>
-            </ul>
-        </section>
-
-        <section class="section-box">
-            <?php while ( have_posts() ) : the_post(); ?>
-                <div class="entry-content">
-                    <?php the_content(); ?>
-                </div>
-            <?php endwhile; ?>
-        </section>
-    </div>
+    <?php if ( have_posts() ) : ?>
+        <?php while ( have_posts() ) : the_post(); ?>
+            <?php if ( trim( wp_strip_all_tags( get_the_content() ) ) ) : ?>
+                <section class="section-shell section-shell-soft">
+                    <div class="container" data-reveal>
+                        <article <?php post_class( 'editor-content' ); ?>>
+                            <?php the_content(); ?>
+                        </article>
+                    </div>
+                </section>
+            <?php endif; ?>
+        <?php endwhile; ?>
+    <?php endif; ?>
 </main>
 
 <?php get_footer(); ?>

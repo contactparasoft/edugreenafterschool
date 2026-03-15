@@ -7,21 +7,28 @@ get_header();
 ?>
 
 <main class="site-main">
-    <div class="container">
-        <?php if ( have_posts() ) : ?>
-            <?php while ( have_posts() ) : the_post(); ?>
-                <section class="page-hero">
-                    <h1><?php the_title(); ?></h1>
-                </section>
+    <section class="section-shell">
+        <div class="container">
+            <?php if ( have_posts() ) : ?>
+                <?php while ( have_posts() ) : the_post(); ?>
+                    <article <?php post_class( 'page-content-box' ); ?> data-reveal>
+                        <header class="page-header">
+                            <h1><?php the_title(); ?></h1>
+                        </header>
 
-                <section class="section-box">
-                    <div class="entry-content">
-                        <?php the_content(); ?>
-                    </div>
-                </section>
-            <?php endwhile; ?>
-        <?php endif; ?>
-    </div>
+                        <div class="editor-content">
+                            <?php the_content(); ?>
+                        </div>
+                    </article>
+                <?php endwhile; ?>
+            <?php else : ?>
+                <article class="page-content-box" data-reveal>
+                    <h1>Conținut indisponibil</h1>
+                    <p>Pagina nu conține informații în acest moment.</p>
+                </article>
+            <?php endif; ?>
+        </div>
+    </section>
 </main>
 
 <?php get_footer(); ?>
