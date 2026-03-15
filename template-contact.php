@@ -16,10 +16,10 @@ get_header();
     <section class="section-shell">
         <div class="container page-content-box" data-reveal>
             <p class="eyebrow">Contact</p>
-            <h1>Ia legătura cu Edu Green Afterschool</h1>
+            <h1>Ia legÄƒtura cu Edu Green Afterschool</h1>
             <p>
-                Pentru informații despre program, grupe și disponibilitate,
-                echipa poate fi contactată telefonic, prin email sau pe Facebook.
+                Pentru informaÈ›ii despre program, grupe È™i disponibilitate,
+                echipa poate fi contactatÄƒ telefonic, prin email sau pe Facebook.
             </p>
         </div>
     </section>
@@ -29,7 +29,7 @@ get_header();
             <article class="info-card" data-reveal>
                 <h2>Telefon</h2>
                 <p><a href="tel:+<?php echo esc_attr( $contact['anca_phone_href'] ); ?>">Anca Rodean: <?php echo esc_html( $contact['anca_phone_display'] ); ?></a></p>
-                <p><a href="tel:+<?php echo esc_attr( $contact['alexandra_phone_href'] ); ?>">Alexandra Niță: <?php echo esc_html( $contact['alexandra_phone_display'] ); ?></a></p>
+                <p><a href="tel:+<?php echo esc_attr( $contact['alexandra_phone_href'] ); ?>">Alexandra NiÈ›Äƒ: <?php echo esc_html( $contact['alexandra_phone_display'] ); ?></a></p>
             </article>
 
             <article class="info-card" data-reveal>
@@ -39,9 +39,9 @@ get_header();
             </article>
 
             <article class="info-card" data-reveal>
-                <h2>Locație</h2>
+                <h2>LocaÈ›ie</h2>
                 <p><?php echo esc_html( $contact['address'] ); ?></p>
-                <p><a class="text-link" href="<?php echo esc_url( $maps_link ); ?>" target="_blank" rel="noopener noreferrer">Deschide în Google Maps</a></p>
+                <p><a class="text-link" href="<?php echo esc_url( $maps_link ); ?>" target="_blank" rel="noopener noreferrer">Deschide Ã®n Google Maps</a></p>
             </article>
         </div>
     </section>

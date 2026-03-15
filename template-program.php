@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Program Activități
+Template Name: Program ActivitÄƒÈ›i
 */
 if ( ! defined( 'ABSPATH' ) ) {
     exit;
@@ -14,17 +14,17 @@ get_header();
 <main class="site-main">
     <section class="section-shell">
         <div class="container page-content-box" data-reveal>
-            <p class="eyebrow">Programul activităților</p>
+            <p class="eyebrow">Programul activitÄƒÈ›ilor</p>
             <h1>Orar Edu Green Afterschool</h1>
             <p>
-                Programul principal se desfășoară de luni până vineri, în intervalul 12:00 - 16:30,
-                cu îndrumare pentru teme, activități educative și timp de joacă.
+                Programul principal se desfÄƒÈ™oarÄƒ de luni pÃ¢nÄƒ vineri, Ã®n intervalul 12:00 - 16:30,
+                cu Ã®ndrumare pentru teme, activitÄƒÈ›i educative È™i timp de joacÄƒ.
             </p>
             <ul class="program-list">
                 <li><?php echo esc_html( $contact['program_main'] ); ?></li>
                 <li><?php echo esc_html( $contact['program_workshops'] ); ?></li>
-                <li>Atelierele de dezvoltare personală sunt opționale și se desfășoară contra cost.</li>
-                <li>Transportul de la școală la afterschool este disponibil contra cost.</li>
+                <li>Atelierele de dezvoltare personalÄƒ sunt opÈ›ionale È™i se desfÄƒÈ™oarÄƒ contra cost.</li>
+                <li>Transportul de la È™coalÄƒ la afterschool este disponibil contra cost.</li>
             </ul>
         </div>
     </section>
@@ -32,15 +32,15 @@ get_header();
     <section class="section-shell section-shell-soft">
         <div class="container card-grid card-grid-two">
             <article class="info-card" data-reveal>
-                <h2>Activități incluse</h2>
-                <p>Îndrumare teme cu profesor de învățământ primar, jocuri și activități sportive.</p>
-                <p>Masă caldă de prânz și gustare oferite prin catering.</p>
+                <h2>ActivitÄƒÈ›i incluse</h2>
+                <p>ÃŽndrumare teme cu profesor de Ã®nvÄƒÈ›ÄƒmÃ¢nt primar, jocuri È™i activitÄƒÈ›i sportive.</p>
+                <p>MasÄƒ caldÄƒ de prÃ¢nz È™i gustare oferite prin catering.</p>
             </article>
 
             <article class="info-card" data-reveal>
                 <h2>Disponibilitate</h2>
                 <p><?php echo esc_html( $contact['registration_notice'] ); ?></p>
-                <a class="btn btn-primary" href="<?php echo esc_url( edugreen_page_url( 'inscriere' ) ); ?>">Accesează înscrierea</a>
+                <a class="btn btn-primary" href="<?php echo esc_url( edugreen_page_url( 'inscriere' ) ); ?>">AcceseazÄƒ Ã®nscrierea</a>
             </article>
         </div>
     </section>

@@ -17,8 +17,8 @@ get_header();
             <p class="eyebrow">Echipa Edu Green</p>
             <h1>Profesori coordonatori</h1>
             <p>
-                Activitățile sunt coordonate de cadre didactice dedicate, în două grupe adaptate
-                nevoilor copiilor: grupa germană și grupa română.
+                ActivitÄƒÈ›ile sunt coordonate de cadre didactice dedicate, Ã®n douÄƒ grupe adaptate
+                nevoilor copiilor: grupa germanÄƒ È™i grupa romÃ¢nÄƒ.
             </p>
         </div>
     </section>
@@ -27,13 +27,13 @@ get_header();
         <div class="container card-grid card-grid-two">
             <article class="profile-card" data-reveal>
                 <h2>Prof. Anca Rodean</h2>
-                <p>Coordonator grupa germană (12-15 copii).</p>
+                <p>Coordonator grupa germanÄƒ (12-15 copii).</p>
                 <p><a href="tel:+<?php echo esc_attr( $contact['anca_phone_href'] ); ?>"><?php echo esc_html( $contact['anca_phone_display'] ); ?></a></p>
             </article>
 
             <article class="profile-card" data-reveal>
-                <h2>Prof. Alexandra Niță</h2>
-                <p>Coordonator grupa română (12-15 copii).</p>
+                <h2>Prof. Alexandra NiÈ›Äƒ</h2>
+                <p>Coordonator grupa romÃ¢nÄƒ (12-15 copii).</p>
                 <p><a href="tel:+<?php echo esc_attr( $contact['alexandra_phone_href'] ); ?>"><?php echo esc_html( $contact['alexandra_phone_display'] ); ?></a></p>
             </article>
         </div>

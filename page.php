@@ -23,8 +23,8 @@ get_header();
                 <?php endwhile; ?>
             <?php else : ?>
                 <article class="page-content-box" data-reveal>
-                    <h1>Conținut indisponibil</h1>
-                    <p>Pagina nu conține informații în acest moment.</p>
+                    <h1>ConÈ›inut indisponibil</h1>
+                    <p>Pagina nu conÈ›ine informaÈ›ii Ã®n acest moment.</p>
                 </article>
             <?php endif; ?>
         </div>

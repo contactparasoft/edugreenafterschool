@@ -77,10 +77,10 @@ function edugreen_contact_data() {
         'office_email'             => 'office@edugreenafterschool.ro',
         'public_email'             => 'afteredugreen@gmail.com',
         'facebook_url'             => 'https://www.facebook.com/p/Edu-Green-Afterschool-61566026006416/',
-        'address'                  => 'Str. Nichita Stănescu, nr. 20, Șelimbăr, Sibiu, România',
+        'address'                  => 'Str. Nichita StÄƒnescu, nr. 20, È˜elimbÄƒr, Sibiu, RomÃ¢nia',
         'program_main'             => 'Luni - Vineri: 12:00 - 16:30',
-        'program_workshops'        => 'Ateliere opționale: 16:30 - 17:30',
-        'registration_notice'      => 'Înscrierile se fac în limita locurilor disponibile.',
+        'program_workshops'        => 'Ateliere opÈ›ionale: 16:30 - 17:30',
+        'registration_notice'      => 'ÃŽnscrierile se fac Ã®n limita locurilor disponibile.',
     );
 }
 

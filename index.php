@@ -23,7 +23,7 @@ get_header();
                 <?php endwhile; ?>
             <?php else : ?>
                 <article class="page-content-box" data-reveal>
-                    <h1>Nu există conținut disponibil.</h1>
+                    <h1>Nu existÄƒ conÈ›inut disponibil.</h1>
                 </article>
             <?php endif; ?>
         </div>
