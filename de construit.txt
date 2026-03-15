@@ -1,0 +1,35 @@
+1. Componenta de prezentare online
+Va fi realizat un site de prezentare cu structură logică, navigare clară și afișare optimizată pentru desktop, tabletă și telefon. Scopul acestuia este de a oferi o imagine profesionistă a activității, de a prezenta serviciile disponibile și de a facilita contactul cu părinții interesați, toate facilitând promovarea companiei. Site-ul va conține:
+•	pagină principală de prezentare a serviciilor și avantajelor oferite;
+•	pagină dedicată conceptului Afterschool Sibiu;
+•	secțiune de prezentare a echipei și a direcției organizației;
+•	pagină pentru colaborări și parteneriate;
+•	galerie foto și/sau video;
+•	secțiune pentru programul activităților;
+•	formular pentru înscrieri sau solicitări preliminare;
+•	pagină de contact cu informații utile și localizare.
+Administrarea conținutului va putea fi realizată printr-un panou intuitiv, conceput pentru actualizări rapide. Ca bază tehnică poate fi utilizată o platformă de tip WordPress sau o soluție similară, în funcție de forma finală de implementare.
+
+date contact
+email office@ edugreenafterschool.ro
+
+gmail afteredugreen@gmail.com
+
+Str Nichita Stănescu, nr. 20, Selimbar, Romania, 557260
+Date de contact
+
+0754 430 810
+
+facebook
+https://www.facebook.com/p/Edu-Green-Afterschool-61566026006416/
+
+logo logo-removebg-preview.png
+
+🍂 NOU din această toamnă în Șelimbăr! 🍂
+📚 Edu Green Afterschool își deschide oficial porțile și îi așteaptă cu drag pe cei mici pentru un program complet de educație non-formală, joacă și dezvoltare personală! 💡✨
+🇩🇪 Grupa germană – cu Prof. Anca Rodean
+🇷🇴 Grupa română – cu Prof. Alexandra Niță
+📞 Contact: Anca Rodean – 0764 200 261 |
+Alexandra Niță – 0754 430 810
+📌 Locurile sunt limitate – înscrierile se fac în ordinea solicitărilor.
+💌 Scrie-ne pe afteredugreen@gmail.com sau pe pagina noastră de Facebook! Vezi mai puţin
