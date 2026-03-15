@@ -444,8 +444,8 @@ function edugreen_render_setup_page() {
     <div class="wrap">
         <h1>EduGreen Initializare/Reinitializare</h1>
         <p>
-            Acest buton recreeaza structura standard: pagini, sabloane, meniu principal si setarea paginii de acasa.
-            Continutul din editorul WordPress nu este folosit in sabloanele dedicate.
+            Acest buton pregateste automat structura standard a site-ului:
+            pagini, meniu principal si setarea paginii de acasa.
         </p>
 
         <?php if ( 'done' === $notice ) : ?>

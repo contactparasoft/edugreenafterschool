@@ -20,8 +20,8 @@ get_header();
             <h1>Momente Edu Green Afterschool</h1>
             <p>
                 Galeria prezinta imagini reale din activitatile educative si recreative desfasurate
-                in cadrul programului. Sunt afisate separat toate fotografiile din folderul <strong>poze</strong>
-                si toate afisele din <strong>poze/evenimente_trecute</strong>, fara limita numerica.
+                in cadrul programului. Fotografiile zilnice si afisele de evenimente sunt prezentate
+                in sectiuni distincte pentru o navigare mai clara.
             </p>
         </div>
     </section>
