@@ -17,12 +17,12 @@ get_header();
             <p class="eyebrow">Colaborari</p>
             <h1>Parteneriate Edu Green Afterschool</h1>
             <p>
-                Sec&#539;iunea este dedicat&#259; colabor&#259;rilor institu&#539;ionale &#537;i proiectelor care sus&#539;in
-                educa&#539;ia non-formal&#259;, dezvoltarea personal&#259; &#537;i activit&#259;&#539;ile pentru copii.
+                Sectiunea este dedicata colaborarilor institutionale si proiectelor care sustin
+                educatia non-formala, dezvoltarea personala si activitatile pentru copii.
             </p>
             <p>
                 Pentru propuneri de parteneriat, contactul se poate realiza telefonic, prin email
-                sau prin pagina oficial&#259; de Facebook.
+                sau prin pagina oficiala de Facebook.
             </p>
         </div>
     </section>
@@ -47,20 +47,6 @@ get_header();
             </article>
         </div>
     </section>
-
-    <?php if ( have_posts() ) : ?>
-        <?php while ( have_posts() ) : the_post(); ?>
-            <?php if ( trim( wp_strip_all_tags( get_the_content() ) ) ) : ?>
-                <section class="section-shell">
-                    <div class="container page-content-box" data-reveal>
-                        <div class="editor-content">
-                            <?php the_content(); ?>
-                        </div>
-                    </div>
-                </section>
-            <?php endif; ?>
-        <?php endwhile; ?>
-    <?php endif; ?>
 </main>
 
 <?php get_footer(); ?>

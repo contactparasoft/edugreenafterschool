@@ -17,8 +17,8 @@ get_header();
             <p class="eyebrow">Inscriere</p>
             <h1>Solicitare preliminara</h1>
             <p>
-                &Icirc;nscrierile se realizeaz&#259; in limita locurilor disponibile, in ordinea solicit&#259;rilor.
-                Pentru confirmarea locului, p&#259;rin&#539;ii pot contacta echipa telefonic sau prin email.
+                Inscrierile se realizeaza in limita locurilor disponibile, in ordinea solicitarilor.
+                Pentru confirmarea locului, parintii pot contacta echipa telefonic sau prin email.
             </p>
 
             <div class="contact-list">
@@ -32,21 +32,13 @@ get_header();
 
     <section class="section-shell section-shell-soft">
         <div class="container page-content-box" data-reveal>
-            <h2>Formular</h2>
-            <p>
-                Daca in aceasta pagina este adaugat un formular din WordPress,
-                acesta va fi afisat mai jos si poate fi folosit pentru solicitari rapide.
-            </p>
-
-            <?php if ( have_posts() ) : ?>
-                <?php while ( have_posts() ) : the_post(); ?>
-                    <?php if ( trim( wp_strip_all_tags( get_the_content() ) ) ) : ?>
-                        <div class="editor-content">
-                            <?php the_content(); ?>
-                        </div>
-                    <?php endif; ?>
-                <?php endwhile; ?>
-            <?php endif; ?>
+            <h2>Pasii de inscriere</h2>
+            <ul class="program-list">
+                <li>Trimite mesaj pe email, telefon sau Facebook.</li>
+                <li>Mentioneaza grupa dorita: germana sau romana.</li>
+                <li>Solicita confirmarea disponibilitatii locului.</li>
+                <li>Finalizarea inscrierii se face in ordinea solicitarilor.</li>
+            </ul>
         </div>
     </section>
 </main>

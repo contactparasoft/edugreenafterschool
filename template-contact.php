@@ -6,7 +6,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-$contact = edugreen_contact_data();
+$contact   = edugreen_contact_data();
 $maps_link = 'https://www.google.com/maps?q=' . rawurlencode( $contact['address'] );
 
 get_header();
@@ -18,8 +18,8 @@ get_header();
             <p class="eyebrow">Contact</p>
             <h1>Ia legatura cu Edu Green Afterschool</h1>
             <p>
-                Pentru informa&#539;ii despre program, grupe &#537;i disponibilitate,
-                echipa poate fi contactat&#259; telefonic, prin email sau pe Facebook.
+                Pentru informatii despre program, grupe si disponibilitate,
+                echipa poate fi contactata telefonic, prin email sau pe Facebook.
             </p>
         </div>
     </section>
@@ -50,16 +50,6 @@ get_header();
         <div class="container page-content-box" data-reveal>
             <h2>Facebook</h2>
             <p><a href="<?php echo esc_url( $contact['facebook_url'] ); ?>" target="_blank" rel="noopener noreferrer">Pagina de Facebook Edu Green Afterschool</a></p>
-
-            <?php if ( have_posts() ) : ?>
-                <?php while ( have_posts() ) : the_post(); ?>
-                    <?php if ( trim( wp_strip_all_tags( get_the_content() ) ) ) : ?>
-                        <div class="editor-content">
-                            <?php the_content(); ?>
-                        </div>
-                    <?php endif; ?>
-                <?php endwhile; ?>
-            <?php endif; ?>
         </div>
     </section>
 </main>

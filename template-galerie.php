@@ -19,8 +19,7 @@ get_header();
             <h1>Momente Edu Green Afterschool</h1>
             <p>
                 Galeria prezinta imagini reale din activitatile educative si recreative desfasurate
-                in cadrul programului. Continutul poate fi extins direct din folderul local de poze
-                sau prin editorul WordPress.
+                in cadrul programului. Continutul este incarcat direct din folderul local de poze.
             </p>
         </div>
     </section>
@@ -51,20 +50,6 @@ get_header();
                 </div>
             </div>
         </section>
-    <?php endif; ?>
-
-    <?php if ( have_posts() ) : ?>
-        <?php while ( have_posts() ) : the_post(); ?>
-            <?php if ( trim( wp_strip_all_tags( get_the_content() ) ) ) : ?>
-                <section class="section-shell">
-                    <div class="container page-content-box" data-reveal>
-                        <div class="editor-content">
-                            <?php the_content(); ?>
-                        </div>
-                    </div>
-                </section>
-            <?php endif; ?>
-        <?php endwhile; ?>
     <?php endif; ?>
 </main>
 

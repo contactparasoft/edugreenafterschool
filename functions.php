@@ -174,10 +174,10 @@ function edugreen_site_blueprint() {
             'menu_title' => 'Program',
         ),
         array(
-            'title'      => "\u{00CEnscriere}",
+            'title'      => "\u{00CE}nscriere",
             'slug'       => 'inscriere',
             'template'   => 'template-inscriere.php',
-            'menu_title' => "\u{00CEnscriere}",
+            'menu_title' => "\u{00CE}nscriere",
         ),
         array(
             'title'      => 'Contact',
