@@ -18,10 +18,7 @@ get_header();
         <div class="container page-content-box" data-reveal>
             <p class="eyebrow">Galerie foto si video</p>
             <h1>Momente Edu Green Afterschool</h1>
-            <p>
-                Galeria prezinta imagini reale din activitatile educative si recreative desfasurate
-                in cadrul programului.
-            </p>
+    
         </div>
     </section>
 
