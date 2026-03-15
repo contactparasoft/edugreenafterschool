@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
@@ -21,13 +21,13 @@ $logo_url  = get_template_directory_uri() . '/logo-removebg-preview.png';
     <div class="header-utility">
         <div class="container utility-inner">
             <a href="tel:+<?php echo esc_attr( $contact['anca_phone_href'] ); ?>">Anca Rodean: <?php echo esc_html( $contact['anca_phone_display'] ); ?></a>
-            <a href="tel:+<?php echo esc_attr( $contact['alexandra_phone_href'] ); ?>">Alexandra NiÈ›Äƒ: <?php echo esc_html( $contact['alexandra_phone_display'] ); ?></a>
+            <a href="tel:+<?php echo esc_attr( $contact['alexandra_phone_href'] ); ?>">Alexandra Ni&#539;&#259;: <?php echo esc_html( $contact['alexandra_phone_display'] ); ?></a>
             <a href="mailto:<?php echo antispambot( esc_attr( $contact['public_email'] ) ); ?>"><?php echo antispambot( esc_html( $contact['public_email'] ) ); ?></a>
         </div>
     </div>
 
     <div class="container header-main" data-reveal>
-        <a class="site-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="<?php esc_attr_e( 'Pagina principalÄƒ Edu Green Afterschool', 'edugreen-minimal' ); ?>">
+        <a class="site-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="<?php esc_attr_e( 'Pagina principala Edu Green Afterschool', 'edugreen-minimal' ); ?>">
             <span class="brand-media">
                 <?php if ( has_custom_logo() ) : ?>
                     <?php the_custom_logo(); ?>
@@ -60,7 +60,7 @@ $logo_url  = get_template_directory_uri() . '/logo-removebg-preview.png';
                 )
             );
             ?>
-            <a class="header-cta" href="<?php echo esc_url( edugreen_page_url( 'inscriere' ) ); ?>">ÃŽnscriere</a>
+            <a class="header-cta" href="<?php echo esc_url( edugreen_page_url( 'inscriere' ) ); ?>">&#206;nscriere</a>
         </nav>
     </div>
 </header>

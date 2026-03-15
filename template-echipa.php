@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /*
 Template Name: Echipa EduGreen
 */
@@ -17,8 +17,8 @@ get_header();
             <p class="eyebrow">Echipa Edu Green</p>
             <h1>Profesori coordonatori</h1>
             <p>
-                ActivitÄƒÈ›ile sunt coordonate de cadre didactice dedicate, Ã®n douÄƒ grupe adaptate
-                nevoilor copiilor: grupa germanÄƒ È™i grupa romÃ¢nÄƒ.
+                Activit&#259;&#539;ile sunt coordonate de cadre didactice dedicate, in doua grupe adaptate
+                nevoilor copiilor: grupa german&#259; &#537;i grupa rom&acirc;n&#259;.
             </p>
         </div>
     </section>
@@ -27,13 +27,13 @@ get_header();
         <div class="container card-grid card-grid-two">
             <article class="profile-card" data-reveal>
                 <h2>Prof. Anca Rodean</h2>
-                <p>Coordonator grupa germanÄƒ (12-15 copii).</p>
+                <p>Coordonator grupa german&#259; (12-15 copii).</p>
                 <p><a href="tel:+<?php echo esc_attr( $contact['anca_phone_href'] ); ?>"><?php echo esc_html( $contact['anca_phone_display'] ); ?></a></p>
             </article>
 
             <article class="profile-card" data-reveal>
-                <h2>Prof. Alexandra NiÈ›Äƒ</h2>
-                <p>Coordonator grupa romÃ¢nÄƒ (12-15 copii).</p>
+                <h2>Prof. Alexandra Ni&#539;&#259;</h2>
+                <p>Coordonator grupa rom&acirc;n&#259; (12-15 copii).</p>
                 <p><a href="tel:+<?php echo esc_attr( $contact['alexandra_phone_href'] ); ?>"><?php echo esc_html( $contact['alexandra_phone_display'] ); ?></a></p>
             </article>
         </div>

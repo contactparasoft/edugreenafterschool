@@ -1,6 +1,6 @@
-<?php
+﻿<?php
 /*
-Template Name: ColaborÄƒri È™i Parteneriate
+Template Name: Colaborari si Parteneriate
 */
 if ( ! defined( 'ABSPATH' ) ) {
     exit;
@@ -14,15 +14,15 @@ get_header();
 <main class="site-main">
     <section class="section-shell">
         <div class="container page-content-box" data-reveal>
-            <p class="eyebrow">ColaborÄƒri</p>
+            <p class="eyebrow">Colaborari</p>
             <h1>Parteneriate Edu Green Afterschool</h1>
             <p>
-                SecÈ›iunea este dedicatÄƒ colaborÄƒrilor instituÈ›ionale È™i proiectelor care susÈ›in
-                educaÈ›ia non-formalÄƒ, dezvoltarea personalÄƒ È™i activitÄƒÈ›ile pentru copii.
+                Sec&#539;iunea este dedicat&#259; colabor&#259;rilor institu&#539;ionale &#537;i proiectelor care sus&#539;in
+                educa&#539;ia non-formal&#259;, dezvoltarea personal&#259; &#537;i activit&#259;&#539;ile pentru copii.
             </p>
             <p>
                 Pentru propuneri de parteneriat, contactul se poate realiza telefonic, prin email
-                sau prin pagina oficialÄƒ de Facebook.
+                sau prin pagina oficial&#259; de Facebook.
             </p>
         </div>
     </section>
@@ -38,7 +38,7 @@ get_header();
             <article class="info-card" data-reveal>
                 <h2>Telefon</h2>
                 <p><a href="tel:+<?php echo esc_attr( $contact['anca_phone_href'] ); ?>">Anca Rodean: <?php echo esc_html( $contact['anca_phone_display'] ); ?></a></p>
-                <p><a href="tel:+<?php echo esc_attr( $contact['alexandra_phone_href'] ); ?>">Alexandra NiÈ›Äƒ: <?php echo esc_html( $contact['alexandra_phone_display'] ); ?></a></p>
+                <p><a href="tel:+<?php echo esc_attr( $contact['alexandra_phone_href'] ); ?>">Alexandra Ni&#539;&#259;: <?php echo esc_html( $contact['alexandra_phone_display'] ); ?></a></p>
             </article>
 
             <article class="info-card" data-reveal>

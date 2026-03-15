@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /*
 Template Name: Galerie EduGreen
 */
@@ -6,8 +6,8 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-$poster_url      = get_template_directory_uri() . '/afis_deschidere.jpg';
-$gallery_images  = edugreen_collect_local_images( 'poze', 80 );
+$poster_url     = get_template_directory_uri() . '/afis_deschidere.jpg';
+$gallery_images = edugreen_collect_local_images( 'poze', 80 );
 
 get_header();
 ?>
@@ -15,11 +15,11 @@ get_header();
 <main class="site-main">
     <section class="section-shell">
         <div class="container page-content-box" data-reveal>
-            <p class="eyebrow">Galerie foto și video</p>
+            <p class="eyebrow">Galerie foto si video</p>
             <h1>Momente Edu Green Afterschool</h1>
             <p>
-                Galeria prezintă imagini reale din activitățile educative și recreative desfășurate
-                în cadrul programului. Conținutul poate fi extins direct din folderul local de poze
+                Galeria prezinta imagini reale din activitatile educative si recreative desfasurate
+                in cadrul programului. Continutul poate fi extins direct din folderul local de poze
                 sau prin editorul WordPress.
             </p>
         </div>
@@ -28,8 +28,8 @@ get_header();
     <section class="section-shell section-shell-soft">
         <div class="container" data-reveal>
             <figure class="poster-frame">
-                <img src="<?php echo esc_url( $poster_url ); ?>" alt="Afiș Edu Green Afterschool">
-                <figcaption>Afișul oficial de prezentare Edu Green Afterschool.</figcaption>
+                <img src="<?php echo esc_url( $poster_url ); ?>" alt="Afis Edu Green Afterschool">
+                <figcaption>Afisul oficial de prezentare Edu Green Afterschool.</figcaption>
             </figure>
         </div>
     </section>
@@ -39,7 +39,7 @@ get_header();
             <div class="container">
                 <div class="section-heading" data-reveal>
                     <p class="eyebrow">Fotografii</p>
-                    <h2>Activități și evenimente</h2>
+                    <h2>Activitati si evenimente</h2>
                 </div>
 
                 <div class="gallery-grid">

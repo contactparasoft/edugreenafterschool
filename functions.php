@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
@@ -77,10 +77,10 @@ function edugreen_contact_data() {
         'office_email'             => 'office@edugreenafterschool.ro',
         'public_email'             => 'afteredugreen@gmail.com',
         'facebook_url'             => 'https://www.facebook.com/p/Edu-Green-Afterschool-61566026006416/',
-        'address'                  => 'Str. Nichita StÄƒnescu, nr. 20, È˜elimbÄƒr, Sibiu, RomÃ¢nia',
+        'address'                  => "Str. Nichita St\u{0103}nescu, nr. 20, \u{0218}elimb\u{0103}r, Sibiu, Rom\u{00E2}nia",
         'program_main'             => 'Luni - Vineri: 12:00 - 16:30',
-        'program_workshops'        => 'Ateliere opÈ›ionale: 16:30 - 17:30',
-        'registration_notice'      => 'ÃŽnscrierile se fac Ã®n limita locurilor disponibile.',
+        'program_workshops'        => "Ateliere op\u{021B}ionale: 16:30 - 17:30",
+        'registration_notice'      => "\u{00CE}nscrierile se fac \u{00EE}n limita locurilor disponibile.",
     );
 }
 

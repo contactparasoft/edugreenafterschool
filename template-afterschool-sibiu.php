@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /*
 Template Name: Afterschool Sibiu
 */
@@ -15,15 +15,15 @@ get_header();
     <section class="section-shell">
         <div class="container page-content-box" data-reveal>
             <p class="eyebrow">Afterschool Sibiu</p>
-            <h1>Conceptul Edu Green Ã®n È˜elimbÄƒr</h1>
+            <h1>Conceptul Edu Green in Selimbar</h1>
             <p>
-                Programul Edu Green Afterschool este construit ca un spaÈ›iu Ã®n care copiii beneficiazÄƒ
-                de educaÈ›ie non-formalÄƒ, Ã®ndrumare pentru teme È™i timp de calitate, Ã®ntr-un mediu sigur,
-                cu profesori dedicaÈ›i È™i activitÄƒÈ›i echilibrate.
+                Programul Edu Green Afterschool este construit ca un spa&#539;iu in care copiii beneficiaz&#259;
+                de educa&#539;ie non-formal&#259;, indrumare pentru teme &#537;i timp de calitate, intr-un mediu sigur,
+                cu profesori dedica&#539;i &#537;i activit&#259;&#539;i echilibrate.
             </p>
             <p>
-                Oferta include grupa germanÄƒ È™i grupa romÃ¢nÄƒ, fiecare cu 12-15 copii,
-                coordonate de Prof. Anca Rodean È™i Prof. Alexandra NiÈ›Äƒ.
+                Oferta include grupa german&#259; &#537;i grupa rom&acirc;n&#259;, fiecare cu 12-15 copii,
+                coordonate de Prof. Anca Rodean &#537;i Prof. Alexandra Ni&#539;&#259;.
             </p>
         </div>
     </section>
@@ -31,18 +31,18 @@ get_header();
     <section class="section-shell section-shell-soft">
         <div class="container card-grid card-grid-two">
             <article class="info-card" data-reveal>
-                <h2>DirecÈ›ie educaÈ›ionalÄƒ</h2>
+                <h2>Directie educationala</h2>
                 <p>
-                    Accent pe dezvoltare academicÄƒ È™i personalÄƒ prin Ã®ndrumare constantÄƒ,
-                    jocuri, activitÄƒÈ›i sportive È™i ateliere opÈ›ionale Ã®n intervalul 16:30 - 17:30.
+                    Accent pe dezvoltare academic&#259; &#537;i personal&#259; prin indrumare constant&#259;,
+                    jocuri, activit&#259;&#539;i sportive &#537;i ateliere op&#539;ionale in intervalul 16:30 - 17:30.
                 </p>
             </article>
 
             <article class="info-card" data-reveal>
-                <h2>Cadru de desfÄƒÈ™urare</h2>
+                <h2>Cadru de desfasurare</h2>
                 <p>
-                    Copiii au acces la curte generoasÄƒ cu loc de joacÄƒ, masÄƒ caldÄƒ de prÃ¢nz,
-                    gustare È™i opÈ›iune de transport de la È™coalÄƒ la afterschool (contra cost).
+                    Copiii au acces la curte generoas&#259; cu loc de joac&#259;, mas&#259; cald&#259; de pr&acirc;nz,
+                    gustare &#537;i op&#539;iune de transport de la &#537;coal&#259; la afterschool (contra cost).
                 </p>
                 <p class="footer-note"><?php echo esc_html( $contact['registration_notice'] ); ?></p>
             </article>

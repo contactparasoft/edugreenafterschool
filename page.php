@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
@@ -23,8 +23,8 @@ get_header();
                 <?php endwhile; ?>
             <?php else : ?>
                 <article class="page-content-box" data-reveal>
-                    <h1>ConÈ›inut indisponibil</h1>
-                    <p>Pagina nu conÈ›ine informaÈ›ii Ã®n acest moment.</p>
+                    <h1>Con&#539;inut indisponibil</h1>
+                    <p>Pagina nu con&#539;ine informa&#539;ii &#238;n acest moment.</p>
                 </article>
             <?php endif; ?>
         </div>
