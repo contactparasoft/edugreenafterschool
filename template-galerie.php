@@ -6,8 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-$poster_url     = get_template_directory_uri() . '/afis_deschidere.jpg';
-$gallery_images = edugreen_collect_local_images( 'poze', 80 );
+$poster_url   = get_template_directory_uri() . '/afis_deschidere.jpg';
+$daily_images = edugreen_collect_local_images( 'poze', 0, false );
+$event_images = edugreen_collect_local_images( 'poze/evenimente_trecute', 0, true );
 
 get_header();
 ?>
@@ -19,7 +20,8 @@ get_header();
             <h1>Momente Edu Green Afterschool</h1>
             <p>
                 Galeria prezinta imagini reale din activitatile educative si recreative desfasurate
-                in cadrul programului. Continutul este incarcat direct din folderul local de poze.
+                in cadrul programului. Sunt afisate separat toate fotografiile din folderul <strong>poze</strong>
+                si toate afisele din <strong>poze/evenimente_trecute</strong>, fara limita numerica.
             </p>
         </div>
     </section>
@@ -33,18 +35,37 @@ get_header();
         </div>
     </section>
 
-    <?php if ( ! empty( $gallery_images ) ) : ?>
+    <?php if ( ! empty( $daily_images ) ) : ?>
         <section class="section-shell">
             <div class="container">
                 <div class="section-heading" data-reveal>
                     <p class="eyebrow">Fotografii</p>
-                    <h2>Activitati si evenimente</h2>
+                    <h2>Activitati zilnice (<?php echo esc_html( count( $daily_images ) ); ?> imagini)</h2>
                 </div>
 
                 <div class="gallery-grid">
-                    <?php foreach ( $gallery_images as $index => $photo ) : ?>
+                    <?php foreach ( $daily_images as $index => $photo ) : ?>
                         <figure class="gallery-item" data-reveal>
                             <img src="<?php echo esc_url( $photo['url'] ); ?>" alt="<?php echo esc_attr( 'Foto Edu Green Afterschool ' . ( $index + 1 ) ); ?>" loading="lazy">
+                        </figure>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </section>
+    <?php endif; ?>
+
+    <?php if ( ! empty( $event_images ) ) : ?>
+        <section class="section-shell section-shell-soft">
+            <div class="container">
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow">Afise evenimente</p>
+                    <h2>Evenimente trecute (<?php echo esc_html( count( $event_images ) ); ?> imagini)</h2>
+                </div>
+
+                <div class="gallery-grid">
+                    <?php foreach ( $event_images as $index => $photo ) : ?>
+                        <figure class="gallery-item" data-reveal>
+                            <img src="<?php echo esc_url( $photo['url'] ); ?>" alt="<?php echo esc_attr( 'Afis eveniment Edu Green ' . ( $index + 1 ) ); ?>" loading="lazy">
                         </figure>
                     <?php endforeach; ?>
                 </div>

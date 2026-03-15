@@ -9,7 +9,7 @@ $program_url    = edugreen_page_url( 'program' );
 $contact_url    = edugreen_page_url( 'contact' );
 $signup_url     = edugreen_page_url( 'inscriere' );
 $gallery_url    = edugreen_page_url( 'galerie' );
-$gallery_images = edugreen_collect_local_images( 'poze', 6 );
+$gallery_images = edugreen_collect_local_images( 'poze', 6, false );
 ?>
 <section class="hero-section">
     <div class="container hero-grid">

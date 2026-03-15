@@ -84,7 +84,7 @@ function edugreen_contact_data() {
     );
 }
 
-function edugreen_collect_local_images( $relative_dir = 'poze', $limit = 18 ) {
+function edugreen_collect_local_images( $relative_dir = 'poze', $limit = 18, $recursive = true ) {
     $base_dir = trailingslashit( get_template_directory() ) . trim( $relative_dir, '/\\' );
 
     if ( ! is_dir( $base_dir ) ) {
@@ -92,26 +92,45 @@ function edugreen_collect_local_images( $relative_dir = 'poze', $limit = 18 ) {
     }
 
     $allowed_extensions = array( 'jpg', 'jpeg', 'png', 'webp' );
-    $iterator           = new RecursiveIteratorIterator(
-        new RecursiveDirectoryIterator(
-            $base_dir,
-            FilesystemIterator::SKIP_DOTS
-        )
-    );
     $collected_paths    = array();
 
-    foreach ( $iterator as $file ) {
-        if ( ! $file->isFile() ) {
-            continue;
+    if ( $recursive ) {
+        $iterator = new RecursiveIteratorIterator(
+            new RecursiveDirectoryIterator(
+                $base_dir,
+                FilesystemIterator::SKIP_DOTS
+            )
+        );
+
+        foreach ( $iterator as $file ) {
+            if ( ! $file->isFile() ) {
+                continue;
+            }
+
+            $extension = strtolower( $file->getExtension() );
+
+            if ( ! in_array( $extension, $allowed_extensions, true ) ) {
+                continue;
+            }
+
+            $collected_paths[] = str_replace( '\\', '/', $file->getPathname() );
         }
+    } else {
+        $iterator = new DirectoryIterator( $base_dir );
 
-        $extension = strtolower( $file->getExtension() );
+        foreach ( $iterator as $file ) {
+            if ( ! $file->isFile() ) {
+                continue;
+            }
 
-        if ( ! in_array( $extension, $allowed_extensions, true ) ) {
-            continue;
+            $extension = strtolower( $file->getExtension() );
+
+            if ( ! in_array( $extension, $allowed_extensions, true ) ) {
+                continue;
+            }
+
+            $collected_paths[] = str_replace( '\\', '/', $file->getPathname() );
         }
-
-        $collected_paths[] = str_replace( '\\', '/', $file->getPathname() );
     }
 
     sort( $collected_paths, SORT_NATURAL | SORT_FLAG_CASE );
