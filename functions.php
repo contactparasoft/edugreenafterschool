@@ -375,7 +375,7 @@ function edugreen_structure_is_valid() {
 }
 
 function edugreen_maybe_initialize_site() {
-    if ( ! is_admin() || ! current_user_can( 'manage_options' ) || wp_doing_ajax() ) {
+    if ( wp_doing_ajax() || wp_installing() ) {
         return;
     }
 
@@ -389,12 +389,38 @@ function edugreen_maybe_initialize_site() {
         edugreen_initialize_site( true );
     }
 }
-add_action( 'admin_init', 'edugreen_maybe_initialize_site' );
+add_action( 'init', 'edugreen_maybe_initialize_site', 20 );
 
 function edugreen_after_switch_theme() {
     edugreen_initialize_site( true );
 }
 add_action( 'after_switch_theme', 'edugreen_after_switch_theme' );
+
+function edugreen_force_homepage_request() {
+    if ( is_admin() || wp_doing_ajax() || wp_installing() ) {
+        return;
+    }
+
+    $home_page = get_page_by_path( 'acasa' );
+    if ( ! ( $home_page instanceof WP_Post ) ) {
+        return;
+    }
+
+    $front_id = (int) get_option( 'page_on_front' );
+    $is_valid = ( 'page' === get_option( 'show_on_front' ) ) && ( $front_id === (int) $home_page->ID );
+
+    if ( ! $is_valid ) {
+        update_option( 'show_on_front', 'page' );
+        update_option( 'page_on_front', (int) $home_page->ID );
+        update_option( 'page_for_posts', 0 );
+    }
+
+    if ( is_home() && ! is_front_page() ) {
+        wp_safe_redirect( get_permalink( $home_page ), 302 );
+        exit;
+    }
+}
+add_action( 'template_redirect', 'edugreen_force_homepage_request', 1 );
 
 function edugreen_register_setup_page() {
     add_theme_page(
