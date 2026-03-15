@@ -17,8 +17,8 @@ get_header();
             <p class="eyebrow">Echipa Edu Green</p>
             <h1>Profesori coordonatori</h1>
             <p>
-                Activit&#259;&#539;ile sunt coordonate de cadre didactice dedicate, in doua grupe adaptate
-                nevoilor copiilor: grupa german&#259; &#537;i grupa rom&acirc;n&#259;.
+                Activitatile sunt coordonate de cadre didactice dedicate, in doua grupe adaptate
+                nevoilor copiilor: grupa germana si grupa romana.
             </p>
         </div>
     </section>
@@ -27,31 +27,17 @@ get_header();
         <div class="container card-grid card-grid-two">
             <article class="profile-card" data-reveal>
                 <h2>Prof. Anca Rodean</h2>
-                <p>Coordonator grupa german&#259; (12-15 copii).</p>
+                <p>Coordonator grupa germana (12-15 copii).</p>
                 <p><a href="tel:+<?php echo esc_attr( $contact['anca_phone_href'] ); ?>"><?php echo esc_html( $contact['anca_phone_display'] ); ?></a></p>
             </article>
 
             <article class="profile-card" data-reveal>
                 <h2>Prof. Alexandra Ni&#539;&#259;</h2>
-                <p>Coordonator grupa rom&acirc;n&#259; (12-15 copii).</p>
+                <p>Coordonator grupa romana (12-15 copii).</p>
                 <p><a href="tel:+<?php echo esc_attr( $contact['alexandra_phone_href'] ); ?>"><?php echo esc_html( $contact['alexandra_phone_display'] ); ?></a></p>
             </article>
         </div>
     </section>
-
-    <?php if ( have_posts() ) : ?>
-        <?php while ( have_posts() ) : the_post(); ?>
-            <?php if ( trim( wp_strip_all_tags( get_the_content() ) ) ) : ?>
-                <section class="section-shell">
-                    <div class="container page-content-box" data-reveal>
-                        <div class="editor-content">
-                            <?php the_content(); ?>
-                        </div>
-                    </div>
-                </section>
-            <?php endif; ?>
-        <?php endwhile; ?>
-    <?php endif; ?>
 </main>
 
 <?php get_footer(); ?>
